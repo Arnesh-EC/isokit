@@ -1,0 +1,15 @@
+[project]
+name = "isokit"
+version = "0.1.0"
+description = "Pack first-boot config scripts into a Joliet+Rock-Ridge config ISO with a manifest."
+requires-python = ">=3.14"
+dependencies = [
+    "pycdlib>=1.16.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/isokit"]
