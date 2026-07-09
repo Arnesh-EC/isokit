@@ -1,10 +1,15 @@
 [project]
 name = "isokit"
-version = "0.1.0"
+version = "0.2.0"
 description = "Pack first-boot config scripts into a Joliet+Rock-Ridge config ISO with a manifest."
 requires-python = ">=3.14"
 dependencies = [
     "pycdlib>=1.16.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
 ]
 
 [build-system]
